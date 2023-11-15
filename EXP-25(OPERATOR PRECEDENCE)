@@ -62,7 +62,6 @@ void shift(char *stack, char *input, int *stackPointer, int *inputPointer) {
     stack[*stackPointer] = '\0';
     printf("Shift: %s\n", stack);
 }
-
 void reduce(char *stack, int *stackPointer) {
     // Perform reduction based on the grammar rules
     if (stack[(*stackPointer) - 1] == 'E' && stack[(*stackPointer) - 2] == '+' && stack[(*stackPointer) - 3] == 'E') {
